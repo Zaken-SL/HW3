@@ -1,0 +1,7 @@
+div.justified {
+    display: flex;
+    justify-content: inline;
+}
+body {
+    background-color: lightblue;
+  }

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<link rel="shortcut icon" type="image/jpg" href="../img/favicon_js.jpg"/>
+	<img src ="../img/tree-solid.svg" alt="awesome font icon" width = "50px" height = "50px">
+	<link rel="stylesheet" href="../css/styles.css">
+	
+    <title>Calculation Form</title>
+    <meta charset="utf-8"/>	
+  </head>
+  
+  <body>
+
+		<form id="form2" name="calForce" action="index.html" method="get" target="_self">
+			<h3 id="Title">Sir Issac Newtow’s Law of Motion</h3>
+       <p> In classical mechanics using Sir Issac Newtow’s Law of Motion to describe the 
+        relationship between falling objects and forces acting upon it by using a formular. Write 
+        a simple function in JS to handle this.</P>
+	
+    <label for="Mass"> Mass:</label>
+    <textarea id="mass" name="Mass"  cols="10" rows="1"></textarea>
+    <label for="AccelerationF">Acceleration:</label>
+    <textarea id="AccelerationF" name="AccelerationF"  cols="10" rows="1"></textarea>
+
+	<hr />	
+	
+    <button type="button" onclick="computeForce()">Calculate</button><br>
+	
+    <label for="Force"> Force:</label><br>
+    <textarea id="Force" name="Force" readonly cols="15" rows="1"></textarea><br><br>
+
+   <lb></lb>
+			</form>
+			<form id="form3" name="Displacement" action="index.html" method="get" target="_self">
+				<h3 id="Title">Displacement</h3>
+		   <p> Find the --Displacement—with respect to time of an falling object which is equal 
+			to its initial velocity times time subtract acceleration times time to the second 
+			power. This calculator does assume constant acceleration during the time 
+			traveled. Write a simple function in JS to handle this.</P>
+		
+			
+		<label for="Velocity"> initial velocity m/s^2:</label>
+		<textarea id="Velocity" name="Velocity"  cols="10" rows="1"></textarea>
+		<label for="Time"> Time in seconds:</label>
+		<textarea id="Time" name="Time"  cols="10" rows="1"></textarea>
+		<label for="AccelerationD"> Acceleration m/s^2:</label>
+		<textarea id="AccelerationD" name="AccelerationD"  cols="10" rows="1"></textarea>
+
+		<hr />	
+		
+		<button type="button" onclick="computeAvgVelocity()">Calculate</button><br>
+		<div class="justified">
+		<label for="Displacement"> Displacement:</label><br>
+		<textarea id="Displacement" name="Displacement" readonly cols="15" rows="1"></textarea><br><br>
+	</div>
+	   <lb></lb>
+				</form>
+				<form id="form3" name="Quadratic" action="index.html" method="get" target="_self">
+					<h3 id="Title">Quadratic equation</h3>
+			   <p> For this section, prompt a user to input the following items based on this formula 
+				and produce an output of ans1 and ans2. Write a simple function in JS to handle 
+				this.</P>
+			
+				
+			<label for="A"> Side A:</label>
+			<textarea id="A" name="A"  cols="10" rows="1"></textarea>
+			<label for="B"> Side B:</label>
+			<textarea id="B" name="B"  cols="10" rows="1"></textarea>
+			<label for="C"> Side C:</label>
+			<textarea id="C" name="C"  cols="10" rows="1"></textarea>
+	
+			<hr />	
+			
+			<button type="button" onclick="computePrincipal()">Calculate</button><br>
+			<div class="justified">
+			<label for="Quad"> Displacement:</label><br>
+			<textarea id="Quad" name="Quad" readonly cols="25" rows="3"></textarea><br><br>
+		</div>
+		   <lb></lb>
+					</form>
+
+					<form id="form4" name="Finance" action="index.html" method="get" target="_self">
+						<h3 id="Title">Finance</h3>
+				   <p> For example, Wachovia Bank has committed to a legal settlement that requires it to pay 
+					you $100,000 per year at the end of each of the next 10 years. What would it cost 
+					Wachovia if it were to instead settle the claim immediately with a single payment, 
+					assuming an interest rate of 5%? Write a simple function in JS to handle this.</P>
+				
+					
+				<label for="PMT"> PMT:</label>
+				<textarea id="PMT" name="PMT"  cols="10" rows="1"></textarea>
+				<label for="Rate"> Rate:</label>
+				<textarea id="Rate" name="Rate"  cols="10" rows="1"></textarea>
+				<label for="NoY"> Number of years:</label>
+				<textarea id="NoY" name="NoY"  cols="10" rows="1"></textarea>
+		
+				<hr />	
+				
+				<button type="button" onclick="computePresentValue()">Calculate</button><br>
+				<div class="justified">
+				<label for="P"> Present value of an anuuity stream:</label><br>
+				<textarea id="P" name="P" readonly cols="25" rows="1"></textarea><br><br>
+			</div>
+			   <lb></lb>
+						</form>
+			
+	
+	<p id="display"></p>
+	<script src="../js/script.js" type="text/javascript"> </script>
+  </body>
+  </html>
